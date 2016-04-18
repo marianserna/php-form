@@ -1,0 +1,221 @@
+.invalid {
+  border: 1px solid red;
+}
+
+div.error-container {
+  margin-bottom: 2em;
+}
+
+div.error {
+  font-family: 'Playfair Display', serif;
+  color: #FF7043;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+h2.error {
+  font-size: 1.5em;
+  text-align: center;
+  color: #FFFFFF;
+  padding-bottom: 1em;
+}
+
+.story span {
+  weight: bold;
+  color: #FFF176;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+}
+
+strong {
+  font-family: 'Lakki Reddy', cursive;
+  size: 2.5em;
+  color: #FF7043;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+main {
+  position: relative;
+}
+
+.rain {
+  top: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/rain.png');
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  margin-bottom: 3em;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+.clouds {
+  top: 0;
+  position: absolute;
+  max-height: 100%;
+}
+.clouds-left {
+  left: 25%;
+}
+.clouds-right {
+  left: 40%;
+}
+
+.form-wrapper {
+  padding: 10vw;
+  padding-top: 0;
+}
+
+form {
+  padding: 5vw;
+  background-color: rgba(33,33,33, 0.8);
+  border-radius: 15px;
+  border: solid 6px #FF7043;
+}
+
+form p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+input, textarea, select, option, label {
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+}
+
+input, textarea, select {
+  background-color: #212121;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  padding: .2em;
+}
+
+.bottom-spacer {
+  position: relative;
+  height: 60vw;
+}
+
+.bottom-spacer img {
+  position: absolute;
+}
+
+.waveback {
+  bottom: 0;
+  height: 75vw;
+  width: 100%;
+}
+
+.wavemedium {
+  bottom: 0;
+  height: 60vw;
+  width: 100%;
+}
+
+.wavefront {
+  bottom: 0;
+  height: 50vw;
+  width: 100%;
+}
+
+.boat {
+  bottom: 7vw;
+  right: 25vw;
+  width: 20vw;
+  transform: rotate(90deg);
+}
+
+.whale {
+  bottom: 0;
+  right: 0;
+  width: 60vw;
+}
+
+.explosion {
+  bottom: 72vw;
+  right: 17vw;
+  width: 25vw;
+  transform: rotate(-15deg);
+  opacity: 0;
+}
+
+#send {
+  cursor: pointer;
+  transition: transform .8s ease-in-out;
+}
+#send:hover {
+  transform: rotate(-45deg);
+}
+
+.thanks-text {
+  position: absolute;
+  top: 150px;
+  left: calc(50vw - 180px);
+  width: 400px;
+  opacity: 0;
+}
+
+.thanks {
+  opacity: 0;
+}
+.thanks p {
+  text-align: center;
+  color: #FF7043;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-container label {
+  width: 100%;
+}
+.text-container textarea {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .text-container label {
+    width: 40%;
+  }
+  .text-container textarea {
+    width: 60%;
+  }
+}
+
+form h3 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.4em;
+  font-family: 'Playfair Display', serif;
+}
